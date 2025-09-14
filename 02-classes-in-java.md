@@ -208,6 +208,9 @@ public boolean equals(Object obj) {
 }
 ```
 
+Note we have to cast obj to `(MyClass) obj` because we pass `obj` in as general `Object` class, and so now we downcast it to `MyClass` since we checked it is the same class as  `this`. 
+
+
 You can see another example of this in `Monster.java`.
 If you change the type of the parameter from `Object` to `Monster`, what happens?
 You should see some helpful hints from IntelliJ about what problem this will cause.
